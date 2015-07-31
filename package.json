@@ -29,5 +29,8 @@
   "dependencies": {
     "adm-zip": "^0.4.7"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "scripts" : {
+    "postInstall" : "scripts/postInstall.js"
+  }
 }
