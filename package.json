@@ -24,7 +24,7 @@
   "homepage": "https://github.com/ktrzeciaknubisa/jxvm#readme",
   "bin": {
     "jxvm": "bin/jxvm.bin.js",
-    "jxx": "bin/jx"
+    "jx": "bin/jx"
   },
   "dependencies": {
     "adm-zip": "^0.4.7"
