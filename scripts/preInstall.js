@@ -4,6 +4,7 @@
 
 var fs = require("fs");
 var path = require("path");
+var cp = require("child_process");
 
 var common = require("../lib/common.js");
 var jx_utils = require("../lib/jx_utils.js");
@@ -15,8 +16,13 @@ if (process.platform === "win32") {
   var org = "/usr/local/bin/jx";
   var backup = "/usr/local/bin/jx_jxvm_backup";
   if (fs.existsSync()) {
-    fs.writeFileSync(backup, fs.readFileSync(org));
-    fs.unlinkSync(org);
+    cp.exec("mv " + org + " " + backup, function(err, stdout, stderr) {
+      if (err) {
+        console.log(err);
+      }
+    });
+    //fs.writeFileSync(backup, fs.readFileSync(org));
+    //fs.unlinkSync(org);
   }
 }
 
