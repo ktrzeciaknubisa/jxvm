@@ -7,6 +7,7 @@ var path = require("path");
 
 var common = require("../lib/common.js");
 var jx_utils = require("../lib/jx_utils.js");
+var console = jx_utils.console;
 
 try {
   if (!fs.existsSync(common.dirVersions))
