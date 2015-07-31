@@ -1,4 +1,4 @@
 .idea
-.versions
+versions
 node_modules
 *.sh
