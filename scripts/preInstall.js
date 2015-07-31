@@ -15,11 +15,11 @@ if (process.platform === "win32") {
 } else {
   var org = "/usr/local/bin/jx";
   var backup = "/usr/local/bin/jx_jxvm_backup";
-  if (fs.existsSync()) {
+  if (fs.existsSync(org)) {
     cp.exec("mv " + org + " " + backup, function(err, stdout, stderr) {
-      if (err) {
-        console.log(err);
-      }
+
+      console.log(err, stdout + "", stderr + "");
+
     });
     //fs.writeFileSync(backup, fs.readFileSync(org));
     //fs.unlinkSync(org);
