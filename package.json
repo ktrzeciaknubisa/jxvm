@@ -1,0 +1,30 @@
+{
+  "name": "jxvm-dev",
+  "version": "1.0.3",
+  "description": "JXcore Version Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktrzeciaknubisa/jxvm.git"
+  },
+  "keywords": [
+    "jxcore",
+    "version",
+    "manager"
+  ],
+  "author": "Krzysztof Trzeciak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ktrzeciaknubisa/jxvm/issues"
+  },
+  "homepage": "https://github.com/ktrzeciaknubisa/jxvm#readme",
+  "bin": {
+    "jxvm": "bin/jxvm.bin.js"
+  },
+  "engines": {
+    "jx": ""
+  }
+}
