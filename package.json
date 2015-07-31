@@ -1,10 +1,10 @@
 {
   "name": "jxvm-dev",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "JXcore Version Manager",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postInstall": "script/postInstall.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "manager"
   ],
   "author": "Krzysztof Trzeciak, Nubisa Inc.",
-  "email" : "ktrzeciak@nubisa.com",
+  "email": "ktrzeciak@nubisa.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ktrzeciaknubisa/jxvm/issues"
@@ -29,8 +29,5 @@
   "dependencies": {
     "adm-zip": "^0.4.7"
   },
-  "preferGlobal" : true,
-  "scripts" : {
-    "postInstall" : "script/postInstall.js"
-  }
+  "preferGlobal": true
 }
