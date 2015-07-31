@@ -4,8 +4,8 @@
   "description": "JXcore Version Manager",
   "main": "index.js",
   "scripts": {
-    "postInstall": "scripts/postInstall.js",
-    "preInstall": "scripts/preInstall.js"
+    "postinstall": "scripts/postInstall.js",
+    "preinstall": "scripts/preInstall.js"
   },
   "repository": {
     "type": "git",
