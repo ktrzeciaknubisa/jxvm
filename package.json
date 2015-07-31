@@ -15,7 +15,8 @@
     "version",
     "manager"
   ],
-  "author": "Krzysztof Trzeciak",
+  "author": "Krzysztof Trzeciak, Nubisa Inc.",
+  "email" : "ktrzeciak@nubisa.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ktrzeciaknubisa/jxvm/issues"
@@ -27,5 +28,9 @@
   },
   "dependencies": {
     "adm-zip": "^0.4.7"
+  },
+  "preferGlobal" : true,
+  "scripts" : {
+    "postInstall" : "script/postInstall.js"
   }
 }

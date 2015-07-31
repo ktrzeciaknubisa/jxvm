@@ -14,4 +14,20 @@ OR, if you have JXcore already installed:
 $ jx install -g jxvm-dev
 ```
 
-In case of
+In case of `Error: EACCES` try the command with `sudo`.
+
+### Usage
+
+Once installed, you may use `jxvm` to manage JXcore versions.
+
+#### jxvm use
+
+
+
+JXcore 0.3.0.4 (if it is not installed) and maps
+
+```bash
+$ jxvm use 0304
+```
+
+
