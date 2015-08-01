@@ -9,8 +9,7 @@ var path = require("path");
 var common = require("../lib/common.js");
 var use = require("../lib/commands/use.js");
 var help = require("../lib/commands/help.js");
-var jx_utils = require("../lib/jx_utils.js");
-var console = jx_utils.console;
+var console = common.console;
 
 if (process.argv.length <= 2)
   help.displayUsage("Too little arguments.");
