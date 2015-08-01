@@ -1,6 +1,6 @@
 {
   "name": "jxvm-dev",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "JXcore Version Manager",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "adm-zip": "^0.4.7"
   },
   "preferGlobal": true,
-  "config" : {
-    "unsafe-perm" : true
+  "config": {
+    "unsafe-perm": true
   }
 }
