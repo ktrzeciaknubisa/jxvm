@@ -3,10 +3,6 @@
   "version": "1.0.23",
   "description": "JXcore Version Manager",
   "main": "index.js",
-  "scripts": {
-    "postinstall": "scripts/postInstall.js",
-    "preinstall": "scripts/preInstall.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ktrzeciaknubisa/jxvm.git"
@@ -25,7 +21,7 @@
   "homepage": "https://github.com/ktrzeciaknubisa/jxvm#readme",
   "bin": {
     "jxvm": "bin/jxvm.bin.js",
-    "jx": "bin/jx"
+    "jxx": "bin/jx"
   },
   "dependencies": {
     "adm-zip": "^0.4.7"
