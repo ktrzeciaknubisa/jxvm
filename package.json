@@ -30,5 +30,8 @@
   "dependencies": {
     "adm-zip": "^0.4.7"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "config" : {
+    "unsafe-perm" : true
+  }
 }
