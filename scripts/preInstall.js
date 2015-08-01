@@ -11,7 +11,7 @@ var jx_utils = require("../lib/jx_utils.js");
 var console = jx_utils.console;
 
 
-console.log("### PREINSTALL");
+console.log("### PREINSTALL", process.gid, process.uid);
 
 if (process.platform === "win32") {
 
