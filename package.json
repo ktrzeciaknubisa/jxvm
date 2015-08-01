@@ -1,6 +1,6 @@
 {
   "name": "jxvm-dev",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "JXcore Version Manager",
   "main": "index.js",
   "scripts": {
