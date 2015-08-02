@@ -26,6 +26,6 @@ var input = common.getUserInput();
 
 cmd.run(input, function(err) {
   if (err)
-    console.log(err);
+    console.error(err);
 });
 

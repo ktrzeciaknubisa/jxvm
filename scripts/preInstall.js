@@ -10,7 +10,7 @@ var common = require("../lib/common.js");
 var console = common.console;
 
 
-console.log("### PREINSTALL", process.gid, process.uid);
+//console.log("### PREINSTALL", process.gid, process.uid);
 
 if (process.platform === "win32") {
 
