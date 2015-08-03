@@ -1,5 +1,7 @@
 # JXcore Version Manager
 
+> This version is under development! DO NOT USE IT!
+
 Allows to install JXcore published binaries (available also on JXcore [download page](http://jxcore.com/downloads/))
 
 ## Installation
