@@ -26,9 +26,9 @@ Once installed, you may use `jxvm` to manage JXcore versions.
 
 Basically this command downloads given JXcore `version` (if it is not already downloaded) and maps it to `jx`.
 
-Engines: 'sm' or 'v8'. If omitted - 'v8' is used as default.
-
-Arch:  'ia32' or 'x64'. If omitted - current platform's arch is used.
+* `version` : numeric version number, e.g.: 0304
+* `engine`: *sm* or *v8*. If omitted - *v8* is used as default.
+* `arch`:  *ia32* or *x64*. If omitted - current platform's arch is used.
 
 Examples:
 
