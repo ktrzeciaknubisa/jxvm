@@ -22,9 +22,15 @@ In case of `Error: EACCES` try the command with `sudo`.
 
 Once installed, you may use `jxvm` to manage JXcore versions.
 
-#### jxvm use <version>
+#### jxvm use <version> [<engine>] [<arch>]
 
-Basically this command downloads given JXcore version (if it is not already downloaded) and maps it to `jx`:
+Basically this command downloads given JXcore `version` (if it is not already downloaded) and maps it to `jx`.
+
+Engines: 'sm' or 'v8'. If omitted - 'v8' is used as default.
+
+Arch:  'ia32' or 'x64'. If omitted - current platform's arch is used.
+
+Examples:
 
 ```bash
 $ jxvm use 237
