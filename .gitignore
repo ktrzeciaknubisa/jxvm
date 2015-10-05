@@ -2,3 +2,6 @@
 versions
 node_modules
 *.sh
+
+*_old.js
+*_dev.js
