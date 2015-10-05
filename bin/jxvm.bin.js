@@ -6,10 +6,9 @@ var fs = require("fs");
 var path = require("path");
 
 
+var jxtools = require('jxtools');
 var common = require("../lib/common.js");
-var use = require("../lib/commands/use.js");
 var help = require("../lib/commands/help.js");
-var console = common.console;
 
 if (process.argv.length <= 2)
   help.displayUsage("Too little arguments.");
@@ -22,10 +21,10 @@ if (!fs.existsSync(fname))
 
 var cmd = require(fname);
 var input = common.getUserInput();
-//console.log(input);
+jxcore.utils.console.info(input);
 
 cmd.run(input, function(err) {
   if (err)
-    console.error(err);
+    jxcore.utils.console.error(err);
 });
 

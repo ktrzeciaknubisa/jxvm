@@ -10,7 +10,7 @@ Allows to install JXcore published binaries (available also on JXcore [download 
 $ npm install -g jxvm-dev
 ```
 
-OR, if you have JXcore already installed:
+Or, if you have JXcore already installed:
 
 ```bash
 $ jx install -g jxvm-dev

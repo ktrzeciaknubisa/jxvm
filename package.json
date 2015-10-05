@@ -1,6 +1,6 @@
 {
-  "name": "jxvm-dev",
-  "version": "1.0.25",
+  "name": "jxvm",
+  "version": "0.0.1",
   "description": "JXcore Version Manager",
   "main": "index.js",
   "repository": {
@@ -23,7 +23,7 @@
     "jxvm": "bin/jxvm.bin.js"
   },
   "dependencies": {
-    "adm-zip": "^0.4.7"
+    "jxtools": "git+https://github.com/ktrzeciaknubisa/jxtools.git"
   },
   "preferGlobal": true,
   "config": {

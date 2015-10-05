@@ -1,7 +1,0 @@
-#!/usr/bin/env node
-
-var common = require("../lib/common.js");
-var jx_utils = require("../lib/jx_utils.js");
-var console = jx_utils.console;
-
-common.logPair("No JXcore version downloaded so far. You need to call e.g.", "jxvm use latest", "yellow");
