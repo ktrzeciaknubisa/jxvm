@@ -7,7 +7,7 @@ var path = require("path");
 var cp = require("child_process");
 
 var common = require("../lib/common.js");
-var console = common.console;
+var console = jxcore.utils.console;
 
 
 //console.log("### PREINSTALL", process.gid, process.uid);
