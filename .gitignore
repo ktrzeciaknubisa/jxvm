@@ -5,3 +5,6 @@ node_modules
 
 *_old.js
 *_dev.js
+
+db.json
+test.js

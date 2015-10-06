@@ -21,9 +21,11 @@ if (!fs.existsSync(fname))
 
 var cmd = require(fname);
 var input = common.getUserInput();
-jxcore.utils.console.info(input);
 
-cmd.run(input, function(err) {
+if (!cmd.run)
+  help.displayUsage("Invalid command: " + argv2);
+
+cmd.run(input, function (err) {
   if (err)
     jxcore.utils.console.error(err);
 });

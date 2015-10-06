@@ -13,7 +13,7 @@ $ npm install -g jxvm-dev
 Or, if you have JXcore already installed:
 
 ```bash
-$ jx install -g jxvm-dev
+$ jx install -g ktrzeciaknubisa/jxvm
 ```
 
 In case of `Error: EACCES` try the command with `sudo`.
@@ -28,16 +28,18 @@ Basically this command downloads given JXcore `version` (if it is not already do
 
 * `version` : numeric version number, e.g.: 0304
 * `engine`: *sm* or *v8*. If omitted - *v8* is used as default.
-* `arch`:  *ia32* or *x64*. If omitted - current platform's arch is used.
+* `arch`:  *ia32* or *x64*. If omitted - current platform's architecture is used.
 
 Examples:
 
 ```bash
 $ jxvm use 237
+$ jxvm use 0.2.3.7      // same as above
 $ jxvm use 304          // V8 by default
 $ jxvm use 304 sm       // SpiderMonkey
 $ jxvm use 304 sm 32    // SpiderMonkey ia32
 $ jxvm use latest
+$ jxvm use latest sm
 ```
 
 

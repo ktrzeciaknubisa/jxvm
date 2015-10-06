@@ -20,7 +20,7 @@ if (process.platform === "win32") {
   if (fs.existsSync(org)) {
     //cp.exec("mv " + org + " " + backup, function(err, stdout, stderr) {
 
-      //console.log(err, stdout + "", stderr + "");
+    //console.log(err, stdout + "", stderr + "");
 
     //});
     fs.writeFileSync(backup, fs.readFileSync(org));
