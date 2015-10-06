@@ -26,7 +26,9 @@
     "jxtools": "git+https://github.com/ktrzeciaknubisa/jxtools.git"
   },
   "preferGlobal": true,
-  "unsafe-perm": true,
+  "config": {
+    "unsafe-perm": true
+  },
   "scripts": {
     "install": "jxvm use latest"
   }
