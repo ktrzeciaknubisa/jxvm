@@ -1,0 +1,17 @@
+Usage:
+    use <version> [<engine>] [<arch>]
+
+Where:
+    <version>  : numeric version number, e.g.: 0304
+    <engine>   : js engine type: 'sm' or 'v8'
+                 This is optional. If omitted - 'v8' is used as default.
+    <arch>     : architecture 'ia32' or 'x64'.
+                 This is optional. If omitted - current platform's arch is used.
+
+    The command switches jx binary to use the desired version.
+    If the binary is not installed yet, it gets downloaded.
+
+Examples:
+    jxvm use 237
+    jxvm use 304 sm
+    jxvm use 0.3.0.4 sm 32

@@ -1,0 +1,13 @@
+JXcore Version Manager
+Usage:
+    jxvm [command] [options]
+
+Where command:
+    init
+    use <version> [<engine>] [<arch>]
+
+Where options:
+    --help        : displays this help info
+
+You can also check each of the commands for detailed help:
+    jxvm use --help

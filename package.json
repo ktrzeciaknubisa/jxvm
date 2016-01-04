@@ -14,7 +14,7 @@
   ],
   "author": "Krzysztof Trzeciak, Nubisa Inc.",
   "email": "ktrzeciak@nubisa.com",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ktrzeciaknubisa/jxvm/issues"
   },
@@ -24,6 +24,5 @@
   },
   "dependencies": {
     "jxtools": "git+https://github.com/ktrzeciaknubisa/jxtools.git"
-  },
-  "preferGlobal": true
+  }
 }

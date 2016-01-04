@@ -2,30 +2,37 @@
 
 // Copyright & License details are available under JXCORE_LICENSE file
 
-var fs = require("fs");
-var path = require("path");
+var fs = require('fs');
+var path = require('path');
 
 
 var jxtools = require('jxtools');
-var common = require("../lib/common.js");
-var help = require("../lib/commands/help.js");
+var common = require('../lib/common.js');
+
+if (!common.init())
+  return;
 
 if (process.argv.length <= 2)
-  help.displayUsage("Too little arguments.");
+  return jxcore.utils.console.error('Too little arguments.');
 
 var argv2 = process.argv[2].replace("--", "");
 
-var fname = path.join(__dirname, "../lib/commands/" + argv2 + ".js");
-if (!fs.existsSync(fname))
-  help.displayUsage("Invalid command: " + argv2);
+var parsedArgv = jxcore.utils.argv.parse();
+if (parsedArgv.h || parsedArgv.help) {
+  jxcore.utils.console.log(common.getHelp(argv2));
+  return;
+}
 
-var cmd = require(fname);
+var files = fs.readdirSync(path.join(__dirname,  '../lib/commands'));
+if (files.indexOf(argv2 + '.js') === -1) {
+  jxcore.utils.console.error('Unknown command', argv2);
+  process.exit(-1);
+}
+
+var mod = require(path.join('../lib/commands', argv2 + '.js'));
 var input = common.getUserInput();
 
-if (!cmd.run)
-  help.displayUsage("Invalid command: " + argv2);
-
-cmd.run(input, function (err) {
+mod.run(input, function (err) {
   if (err)
     jxcore.utils.console.error(err);
 });
